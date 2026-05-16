@@ -1,6 +1,6 @@
 
     // REEMPLAZÁ ESTA URL CON LA QUE TE DIO GOOGLE APPS SCRIPT EN EL PASO 3
-    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwrKCldS__kwMGCLUJqzNMIXSbVMvtRkuUqHFS2TQ3MemIhG_Yn4FB3qIeHTCUCUxnt/exec";
+    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbygNKvHZ6wn3x2Whml4st8LiFYOOBvxJ34TCFtpQMUSVytFLK3Bz2sct7F7HeGOWk8/exec";
 
     document.getElementById('attendanceForm').addEventListener('submit', function(e) {
         e.preventDefault(); // Evita que la página se recargue

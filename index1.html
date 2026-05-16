@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistencia - 6to 3ra</title>
+    <link rel="stylesheet" href="appviews.css">
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Asistencia 6to 3ra</h2>
+    
+    <form id="attendanceForm">
+        <!-- Selector de Alumnos -->
+        <div class="form-group">
+            <label for="studentName">Seleccioná tu Nombre:</label>
+            <select id="studentName" required>
+                <option value="" disabled selected>Elegí tu nombre...</option>
+                <!-- Agrega acá abajo todos los alumnos del curso uno por uno -->
+                <option value="Alvarez, Juan">Alvarez, Juan</option>
+                <option value="Gomez, Maria">Gomez, Maria</option>
+                <option value="Lopez, Carlos">Lopez, Carlos</option>
+                <option value="Rodriguez, Sofia">Rodriguez, Sofia</option>
+                <!-- Podés copiar y pegar la línea de arriba para meter a todo el curso -->
+            </select>
+        </div>
+
+        <!-- Número de PC -->
+        <div class="form-group">
+            <label for="pcNumber">Número de PC donde estás sentado:</label>
+            <input type="number" id="pcNumber" min="1" max="30" placeholder="Ej: 12" required>
+        </div>
+
+        <!-- Código de Validación -->
+        <div class="form-group">
+            <label for="validationCode">Código de Aula (Mirá el pizarrón):</label>
+            <input type="text" id="validationCode" placeholder="Ingresá el código de hoy" required>
+        </div>
+
+        <button type="submit" id="btnSubmit">Registrar Presente</button>
+    </form>
+
+    <div id="responseMessage" class="message"></div>
+</div>
+<script src="appjava.js"></script>
+</body>
+</html>
